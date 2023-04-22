@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+}
+
+header{
+    height: 100vh;
+    background-image: url(../vangogh.desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#navegacao{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #191919;
+    opacity: 1;
+}
+
+#iniciais{
+    font-size: 1.2em;
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 25px;
+    color: aliceblue;
+    float: left;
+    cursor: pointer;
+}
+
+#bloco{
+    margin-right: 18%;   
+}
+.navBotao{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin-top: 30px;
+    background-color: #141414;
+    color: white;
+    border: none;
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.referenciaBotao{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid blue;
+    padding: 13px;
+    margin-top: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#botaoLinkedin{
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+
+#botaoGithub{
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    border: 1px red solid;
+}
+
+.referenciaBotao:hover{
+    background-color: #141414;
+}
+
+#linkedin{
+    color: white;
+}
+#github{
+    color: white;
+}
+#headerEscrita{
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    color: white;   
+}
+
+#primeira{
+    font-size: 1.2em;
+    animation: aparecendoP 3s ease-out;
+    font-family: 'Tilt Prism', cursive;
+}
+
+@keyframes aparecendoP{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#segunda{
+    font-size: 2.7em;
+    animation: aparecendoS 2s ease-out;
+    font-family: 'Tilt Prism', cursive;
+    color: orange;
+}
+
+@keyframes aparecendoS{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#terceira{
+    font-size: 1.2em;
+    animation: aparecendoT 3s ease-out;
+    font-family: 'Tilt Prism', cursive;
+}
+
+@keyframes aparecendoT{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+img{
+    position: relative;
+    left: 65%;
+    margin-top: 50px;
+    width: 350px;
+}
+
+/*FIM DO HEADER*/
+
+#sobre{
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+#meuTitulo{
+    margin-top: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#meuTexto{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color: white;
+    width: 50%;
+    font-family: 'roboto';
+    font-size: 1.2em;
+}
+
+#fotona{
+    position: relative;
+    bottom: 120px;
+    left: 65%;
+    width: 300px;
+    height: 450px;
+    animation: animando 3s infinite alternate-reverse;
+}
+
+@keyframes animando{
+    0%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 100px;
+    }
+    
+}
+
+/*FIM DO SOBRE MIM*/
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0 80px;
+}
+
+#projetos p{
+    font-family: 'roboto';
+}
+
+h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4em;
+}
+#projetos h1{
+    text-align: center;
+}
+
+
+#carrossel{
+    background-color: #141414;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+#esquerda, #direita{
+    width: 15%;
+    height: 300px;
+}
+
+@media(max-width: 1250px){
+    #esquerda{
+        height: 150px;
+    }
+    #direita{
+        height: 150px;
+    }
+    .setas{
+        width: 50%;
+    }
+}
+
+@media(max-width: 1000px){
+    .setas{
+        width: 20%;
+    }
+}
+
+.setas{
+    position: relative;
+    top: 20%;
+    height: 80%;
+    width: 80%;
+    cursor: pointer;
+}
+
+#setaEsquerda{
+    opacity: 0.5;
+}
+
+#centro{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cards{
+    display: flex;
+    position: absolute;
+    left: 5%;
+    width: 100px;
+}
+
+#imagemPrevisao{
+    position: relative;
+    left: 0;
+    width: 250px;
+}
+
+#imagemJogo{
+    position: relative;
+    left: 0;
+    width: 250px;
+    height: 132px;
+}
+
+#imagemGerador{
+    position: relative;
+    left: 10px;
+    width: 360px;
+    height: 132px;
+}
+
+#imagemCalc{
+    position: relative;
+    left: 30px;
+    width: 300px;
+    height: 140px;
+}
+
+#imagemCron{
+    position: relative;
+    left: 20px;
+    width: 300px;
+    height: 140px;
+}
+
+#imagemVasco{
+    position: relative;
+    left: 0;
+    width: 250px;
+    height: 140px;
+}
+
+#cards ul{
+    margin-top: 0px;
+    width: 300px;
+    padding: 10px;
+    border: 1px dashed white;
+}
+
+#cards ul h4{
+    text-align: center;
+}
+
+#cards ul li{
+    list-style: none;
+    width: 90%;
+    margin: 0;
+}
+
+#cards ul p{
+    margin-left:8%;
+}
+
+/*Fim Projetos*/
+
+#habilidades{
+    width: 100%;
+    height: 100vh;
+}
+
+#habil{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+#conteudo{
+    margin-top: 10px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botaoIcon{
+    position: relative;
+    padding: 20px 50px;
+    background-color: #141414;
+    margin: 50px;
+    text-align: center;
+}
+
+@media (max-width:1200px){
+    .botaoIcon{
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width:1000px){
+    .botaoIcon{
+        margin: 20px;
+    }
+}
+
+#botaoHtml{
+    animation: animandoo 4s infinite alternate-reverse;
+    
+}
+
+#botaoCss{
+    animation: animandoo 4s infinite alternate-reverse;
+    animation-delay: 1s;
+}
+
+#botaoJs{
+    animation: animandoo 4s infinite alternate-reverse;
+    animation-delay: 2s;
+}
+
+#botaoSass{
+    animation: animandoo 4s infinite alternate-reverse;
+    animation-delay: 3s;
+}
+
+#botaoNext{
+    animation: animandoo 4s infinite alternate-reverse;
+    animation-delay: 4s;
+}
+@keyframes animandoo{
+    0%{
+        bottom: 100px;
+    }
+
+    100%{
+        bottom: 1px;
+    }
+}
+#iconHtml{
+    width: 50px;
+    height: 100px;
+    color: red;
+}
+
+#iconCss{
+    width: 50px;
+    height: 100px;
+    color: blue;
+}
+
+#iconJs{
+    width: 50px;
+    height: 100px;
+    color: yellow;
+}
+
+#iconSass{
+    width: 50px;
+    height: 100px;
+    color: purple;
+}
+
+#iconLoad{
+    width: 50px;
+    height: 100px;
+    color: white;
+}
+.resumo{
+    color: white;
+}
+
+#creditos{
+    background-color: #191919;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0em;
+}
+
+@media (max-width: 1220px){
+    header{
+        height: 90vh;
+    }   
+}
+
+@media (max-width: 716px){
+    #headerEscrita{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+    header{
+        background-image: url(none);
+    }   
+    #headerEscrita{
+        left: 40%; 
+    }
+
+    .referenciaBotao{
+        padding: 13px;
+        margin-top: 50px;
+        margin: 20px;
+    }
+    
+    #botaoLinkedin{
+        padding: 20px;
+        left: 55%;
+
+    }
+    #botaoGithub{
+        padding: 20px;
+        left: 35%;
+    }
+}
+
+@media (max-width: 900px){
+    #primeira{
+        font-size: 2.2em;
+    }
+    #segunda{
+        font-size: 3.7em;
+    }
+    #terceira{
+        font-size: 2.2em;
+    }
+    #botaoLinkedin{
+        top: 70%;
+    }
+    #botaoGithub{
+        top: 70%;
+    }
+    .navBotao{
+        margin-top: 20px;
+        font-size: 1.7em;
+    }
+    #iniciais{
+        font-size: 1.5em;
+    }
+}
+
