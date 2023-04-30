@@ -9,8 +9,8 @@ body{
 
 header{
     height: 100vh;
-    background-image: url(../vangogh.desktop.png);
-    background-size: cover;
+    background-image: url(../jobs.png);
+    background-size:cover;
     background-repeat: no-repeat;
 }
 #navegacao{
@@ -480,8 +480,8 @@ h1{
 
 @media (max-width: 1024px){
     header{
-        background-image: url(none);
-    }   
+        background-image: none;
+    }
     #headerEscrita{
         left: 40%; 
     }
