@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+#tudo{
     background-color: #141414;
 }
 
@@ -368,6 +368,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .botaoIcon{
     position: relative;
@@ -375,18 +376,6 @@ h4{
     background-color: #141414;
     margin: 50px;
     text-align: center;
-}
-
-@media (max-width:1200px){
-    .botaoIcon{
-        padding: 10px 30px;
-    }
-}
-
-@media (max-width:1000px){
-    .botaoIcon{
-        margin: 20px;
-    }
 }
 
 #botaoHtml{
