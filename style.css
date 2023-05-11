@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #tudo{
     background-color: #141414;
 }
 
 header{
     height: 100vh;
-    background-image: url(images/jobs.png);
+    background-image: url(imagens/jobs.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -76,7 +77,7 @@ header{
 }
 
 .referenciaBotao:hover{
-    background-color: #141414;
+    background-color: #4A4A4A
 }
 
 #linkedin{
@@ -151,13 +152,6 @@ header{
     }
 }
 
-img{
-    position: relative;
-    left: 65%;
-    margin-top: 50px;
-    width: 350px;
-}
-
 /*FIM DO HEADER*/
 
 #sobre{
@@ -213,139 +207,22 @@ img{
     padding: 40px 0 80px;
 }
 
-#projetos p{
-    font-family: 'roboto';
-}
-
-h4{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4em;
-}
 #projetos h1{
     text-align: center;
 }
 
-
-#carrossel{
-    background-color: #141414;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    justify-content: space-between;
+#pega{
+    color: black;
 }
 
-#esquerda, #direita{
-    width: 15%;
-    height: 300px;
+#pega2{
+    color: black;
 }
 
-@media(max-width: 1250px){
-    #esquerda{
-        height: 150px;
-    }
-    #direita{
-        height: 150px;
-    }
-    .setas{
-        width: 50%;
-    }
+#e{
+    margin-bottom: 40px;
 }
 
-@media(max-width: 1000px){
-    .setas{
-        width: 20%;
-    }
-}
-
-.setas{
-    position: relative;
-    top: 20%;
-    height: 80%;
-    width: 80%;
-    cursor: pointer;
-}
-
-#setaEsquerda{
-    opacity: 0.5;
-}
-
-#centro{
-    width: 70%;
-    height: 300px;
-    position: relative;
-    margin: 0 auto;
-}
-
-#cards{
-    display: flex;
-    position: absolute;
-    left: 5%;
-    width: 100px;
-}
-
-#imagemPrevisao{
-    position: relative;
-    left: 0;
-    width: 250px;
-}
-
-#imagemJogo{
-    position: relative;
-    left: 0;
-    width: 250px;
-    height: 132px;
-}
-
-#imagemGerador{
-    position: relative;
-    left: 10px;
-    width: 360px;
-    height: 132px;
-}
-
-#imagemCalc{
-    position: relative;
-    left: 30px;
-    width: 300px;
-    height: 140px;
-}
-
-#imagemCron{
-    position: relative;
-    left: 20px;
-    width: 300px;
-    height: 140px;
-}
-
-#imagemVasco{
-    position: relative;
-    left: 0;
-    width: 250px;
-    height: 140px;
-}
-
-#cards ul{
-    margin-top: 0px;
-    width: 300px;
-    padding: 10px;
-    border: 1px dashed white;
-}
-
-#cards ul h4{
-    text-align: center;
-}
-
-#cards ul li{
-    list-style: none;
-    width: 90%;
-    margin: 0;
-}
-
-#cards ul p{
-    margin-left:8%;
-}
 
 /*Fim Projetos*/
 
@@ -516,4 +393,3 @@ h1{
         font-size: 1.5em;
     }
 }
-
