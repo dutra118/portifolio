@@ -27,57 +27,19 @@ botaoGithub.addEventListener('click', function(){
 })
 
 botaoContatos.addEventListener('click', function(){
-    botaoContatos.style.color = '#333333'
-    botaoInicio.style.color = 'white'
-    botaoProjetos.style.color = 'white'
-    botaoSobre.style.color = 'white'
     ref3.scrollIntoView()
 })
 
 botaoProjetos.addEventListener('click', function(){
-    botaoProjetos.style.color = '#333333'
-    botaoInicio.style.color = 'white'
-    botaoSobre.style.color = 'white'
-    botaoContatos.style.color = 'white'
     ref2.scrollIntoView()
 })
 
 botaoInicio.addEventListener('click', function(){
-    botaoInicio.style.color = '#333333'
-    botaoProjetos.style.color = 'white'
-    botaoSobre.style.color = 'white'
-    botaoContatos.style.color = 'white'
     he.scrollIntoView()
 })
 
 botaoSobre.addEventListener('click', function(){
-    botaoSobre.style.color = '#333333'
-    botaoInicio.style.color = 'white'
-    botaoProjetos.style.color = 'white'
-    botaoContatos.style.color = 'white'
     ref.scrollIntoView()
-})
-
-setaDireita.addEventListener('click', function(){
-    setaEsquerda.style.opacity = '1'
-    setaDireita.style.opacity = '0.5'
-    texto1.style.display = 'none'
-    texto2.style.display = 'none'
-    texto3.style.display = 'none'
-    texto4.style.display = 'block'
-    texto5.style.display = 'block'
-    texto6.style.display = 'block'
-})
-
-setaEsquerda.addEventListener('click', function(){
-    setaEsquerda.style.opacity = '0.5'
-    setaDireita.style.opacity = '1'
-    texto1.style.display = 'block'
-    texto2.style.display = 'block'
-    texto3.style.display = 'block'
-    texto4.style.display = 'none'
-    texto5.style.display = 'none'
-    texto6.style.display = 'none'
 })
 
 window.addEventListener('scroll', function() {
@@ -87,7 +49,7 @@ window.addEventListener('scroll', function() {
         navegacao.style.opacity = '1'
         navegacao.style.boxshadow = '0 1px 10px #333'
         navegacao.style.transitionDuration = '0.8s'
-        navegacao.style.height = '50px'
+        navegacao.style.height = '60px'
         botaoContatos.style.marginTop = '8px'
         botaoContatos.style.backgroundColor = 'black'
         botaoSobre.style.backgroundColor = 'black'
