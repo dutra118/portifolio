@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
@@ -21,10 +22,11 @@
                 <p id="iniciais">("GD")</p>
             </div>
             <div id="bloco">
-                <button class="navBotao" id="botaoContatos">Habilidades</button>
-                <button class="navBotao" id="botaoProjetos">Projetos</button>
-                <button class="navBotao" id="botaoSobre">Sobre mim</button>
-                <button class="navBotao" id="botaoInicio">Início</button>
+                <button class="navBotao" id="botaoMudar"><i class="bi bi-brightness-high"></i></button>
+                <button class="navBotao" id="botaoContatos"><a href="#ref3" class="navLink">Habilidades</a></button>
+                <button class="navBotao" id="botaoProjetos"><a href="#ref2" class="navLink">Projetos</a></button>
+                <button class="navBotao" id="botaoSobre"><a href="#ref" class="navLink">Sobre mim</a></button>
+                <button class="navBotao" id="botaoInicio"><a href="#he" class="navLink">Início</a></button>
             </div>
         </nav>
         <hr>
@@ -40,7 +42,7 @@
                 Github</button>
         </div>
     </header>
-    <hr id="ref" style="color: white;">
+    <hr id="ref" style="color: #141414;">
     <section id="sobre">
         <div id="meuTitulo">
             <h1>Sobre mim</h1>
@@ -67,27 +69,28 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/usa.png" class="d-block w-50" alt="..." style=" height: 500px; margin: 0 auto;">
+                <img src="images/prev].png" class="d-block w-50" alt="..." style=" height: 400px; margin: 0 auto; object-fit: cover;">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Previsão do tempo</h5>
-                  <p class="descricao">Aplicação que mostra o clima atual e nos próximos 5 dias de qualquer cidade do mundo. </p>
+                  <p class="descricao" >Aplicação que mostra o clima atual e nos próximos 5 dias de qualquer cidade do mundo. </p>
                   <p class="descricao" id="previsaotext"> Utilizei para o projeto: <strong>API OPENWEATHER, HTML,CSS</strong> e <strong>Javascript</strong></p>
-                  <a href="https://dutra118.github.io/forecastWeather/" target="_blank" style="color: blue;">Ver projeto</a>
+                  <a href="https://dutra118.github.io/forecastWeather/" target="_blank" style="color: blue; text-decoration: none;">Ver projeto</a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/jogoSimpsons.png" class="d-block w-50" alt="..." style="height: 500px; margin: 0 auto;">
+                <img src="images/jogoSimpsons.png" class="d-block w-50" alt="..." style="height: 400px; margin: 0 auto; object-fit: cover;">
                 <div class="carousel-caption d-none d-md-block" id="pega">
                   <h5>Jogo dos Simpsons</h5>
                   <p class="descricao">O projeto consiste em um jogo de pular obstáculos que no fim mostra a sua pontuação</p>
                   <p class="descricao">Utilizei para o projeto: <strong>HTML,CSS</strong> e <strong>Javascript</strong></p>
-                  <a href="https://dutra118.github.io/gameSimpsons/" target="_blank" style="color: black;">Ver projeto</a>
+                  <a href="https://dutra118.github.io/gameSimpsons/" target="_blank" style="color: blue; text-decoration: none;">Ver projeto</a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/gerador.png" class="d-block w-50" alt="..." style="height: 500px; margin-left: 620px;">
+                <img src="images/senha.png" class="d-block w-50" alt="..." style="height: 400px; margin: 0 auto; object-fit: cover;">
                 <div class="carousel-caption d-none d-md-block" id="pega2">
-                  <p id="e" class="descricao">Utilizei para o projeto: <strong>HTML,CSS</strong> e <strong>Javascript</strong></p>
+                  <p id="text" class="descricao">Utilizei para o projeto: <strong>HTML,CSS</strong> e <strong>Javascript</strong></p>
+                  <a href="#" style="color: blue; text-decoration: none;">Ver projeto</a>
                 </div>
               </div>
             </div>
@@ -112,7 +115,7 @@
             <button class="botaoIcon" id="botaoNext"><ion-icon name="reload-outline" id="iconLoad"></ion-icon></button>
         </div>
     </section>
-    <hr style="color: white;">
+    <hr style="color: white;" id="hrFooter">
     <footer id="creditos">
         <p>&copy; Todos os direitos reservados <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
@@ -122,6 +125,7 @@
             Criado por: Gustavo de Araújo Dutra <br>
             <label for="email"> E-mail: gustavodutra.araujo@gmail.com  </label>
     </footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="script.js"></script>
